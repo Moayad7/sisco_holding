@@ -3706,11 +3706,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
   top: -2px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  background-image: -webkit-linear-gradient(180deg, #FF3939 0.01%, #BF2132 100%);
-  background-image: -moz-linear-gradient(180deg, #FF3939 0.01%, #BF2132 100%);
-  background-image: -ms-linear-gradient(180deg, #FF3939 0.01%, #BF2132 100%);
-  background-image: -o-linear-gradient(180deg, #FF3939 0.01%, #BF2132 100%);
-  background-image: linear-gradient(180deg, #FF3939 0.01%, #BF2132 100%);
+  background-image: -webkit-linear-gradient(180deg, var(--sisco-blue-primary) 0.01%, var(--sisco-blue-secondary) 100%);
+  background-image: -moz-linear-gradient(180deg, var(--sisco-blue-primary) 0.01%, var(--sisco-blue-secondary) 100%);
+  background-image: -ms-linear-gradient(180deg, var(--sisco-blue-primary) 0.01%, var(--sisco-blue-secondary) 100%);
+  background-image: -o-linear-gradient(180deg, var(--sisco-blue-primary) 0.01%, var(--sisco-blue-secondary) 100%);
+  background-image: linear-gradient(180deg, var(--sisco-blue-primary) 0.01%, var(--sisco-blue-secondary) 100%);
   border-radius: 6px;
   z-index: -1;
   opacity: 0;
@@ -6762,7 +6762,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blue-bg {
-  background-color: var(--tp-common-blue);
+  background-color: var(--sisco-blue-primary);
 }
 
 .blue-bg-5 {
@@ -25383,12 +25383,22 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .about__text-title {
-  font-size: 30px;
+  font-size: 100px;
+  font-weight: bolder;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--tp-common-black);
-  margin-bottom: 25px;
+  color: var(--sisco-blue-secondary);
 }
+
+
+@media (max-width:991px){
+
+  .about__text-title {
+    font-size: 40px;
+  }
+  
+}
+
 
 .about__text p {
   font-size: 16px;
@@ -27385,10 +27395,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .services__item-8 {
-  padding: 61px 90px 57px 70px;
+  padding: 51px 70px 47px 50px;
   border: 1.5px solid rgba(255, 255, 255, 0.08);
   position: relative;
   z-index: 1;
+  height:100%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -27410,6 +27421,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .services__item-8:hover .services__project-no span {
+  color: var(--sisco-blue-secondary);
+}
+.services__item-8:hover .services__project-no {
   color: var(--sisco-blue-secondary);
 }
 
@@ -27662,14 +27676,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-weight: 400;
   font-size: 16px;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   line-height: 40px;
   text-align: center;
   font-size: 40px;
   position: relative;
   color: var(--tp-common-black);
   margin-bottom: 37px;
+  margin-top:40px
 }
 
 .services__icon-9 span i,
@@ -27688,9 +27703,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .services__icon-9 span img {
-  position: absolute;
-  bottom: -17px;
-  right: -19px;
+  
 }
 
 [dir=rtl] .services__icon-9 span img {
@@ -28716,6 +28729,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-family: var(--tp-ff-space);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  color: var(--tp-common-white);
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.services__project-no {
+  font-family: var(--tp-ff-space);
+  font-weight: bolder;
   line-height: 1.5;
   color: var(--tp-common-white);
   -webkit-transition: all 0.2s ease-out 0s;
@@ -46481,6 +46505,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .features__item-14 {
   padding: 0 40px 15px;
+  min-height: 270px;
 }
 
 .features__item-15 {
@@ -46583,9 +46608,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   font-size: 90px;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: #EEEEEE;
+  color: var(--sisco-blue-primary);
   margin-bottom: 17px;
   margin-top: -47px;
+  float:right;
 }
 
 .features__icon-15 span {
@@ -46672,7 +46698,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .features__title-14 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--tp-common-black-solid);
@@ -48262,7 +48288,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   }
 }
 
-
+.biography__content{
+  padding-top:50px;
+}
 
 
 .biography__content p {
@@ -63826,4 +63854,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .services__content-9 span{
   color:var(--sisco-blue-primary)
+}
+
+
+.bg-logo{
+  background-image: url('assets/img/logo/SISCO logo favicon-01.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
