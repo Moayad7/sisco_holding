@@ -476,6 +476,7 @@ img,
   /**
   @sesco brand colors
   */
+  --sisco-blue-dark: #001330;
   --sisco-blue-primary: #0f274a;
   --sisco-blue-secondary: #0770BA;
   --sisco-black: #2B2824;
@@ -3610,8 +3611,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tp-btn-border-4:hover {
   color: var(--tp-common-white);
-  background-color: var(--tp-theme-3);
-  border-color: var(--tp-theme-3);
+  background-color: var(--sisco-blue-secondary);
+  border-color: var(--sisco-blue-secondary);
 }
 
 .tp-btn-border-5 {
@@ -6733,6 +6734,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   background-color: var(--tp-common-white);
 }
 
+.white-bg-light {
+  background-color: #fff6;
+}
+
 .black-bg {
   background-color: var(--tp-common-black);
 }
@@ -6763,6 +6768,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .blue-bg {
   background-color: var(--sisco-blue-primary);
+}
+.blue-bg-dark {
+  background-color: var(--sisco-blue-dark);
+}
+
+.blue-bg-gradient{
+  background-image: -webkit-linear-gradient(var(--sisco-blue-dark) , var(--sisco-blue-primary));
+  background-image: -moz-linear-gradient(var(--sisco-blue-dark) , var(--sisco-blue-primary));
+  background-image: -ms-linear-gradient(var(--sisco-blue-dark) , var(--sisco-blue-primary));
+  background-image: -o-linear-gradient(var(--sisco-blue-dark) , var(--sisco-blue-primary));
+  background-image: linear-gradient(var(--sisco-blue-dark) , var(--sisco-blue-primary));
 }
 
 .blue-bg-5 {
@@ -10589,6 +10605,16 @@ only screen and (min-width: 576px) and (max-width: 767px),
   line-height: 1;
 }
 
+.section__title-3 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: var(--tp-ff-space);
+  text-transform: capitalize;
+  color: var(--tp-common-white);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
 .section__title-3 span{
   color:var(--sisco-blue-primary);
 }
@@ -10617,11 +10643,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .section__title-3.has-gradient span {
   display: inline-block;
-  background-image: -webkit-linear-gradient(89.64deg, #F87171 0.32%, #FACC15 32.07%, #4ADE80 60.55%, #38BDF8 99.28%);
-  background-image: -moz-linear-gradient(89.64deg, #F87171 0.32%, #FACC15 32.07%, #4ADE80 60.55%, #38BDF8 99.28%);
-  background-image: -ms-linear-gradient(89.64deg, #F87171 0.32%, #FACC15 32.07%, #4ADE80 60.55%, #38BDF8 99.28%);
-  background-image: -o-linear-gradient(89.64deg, #F87171 0.32%, #FACC15 32.07%, #4ADE80 60.55%, #38BDF8 99.28%);
-  background-image: linear-gradient(89.64deg, #F87171 0.32%, #FACC15 32.07%, #4ADE80 60.55%, #38BDF8 99.28%);
+  background-image: -webkit-linear-gradient(89.64deg, #0770BA55 0.32%, #0770BA 32.07%, #0770BA99 60.55%, #0770BA 99.28%);
+  background-image: -moz-linear-gradient(89.64deg, #0770BA55 0.32%, #0770BA 32.07%, #0770BA99 60.55%, #0770BA 99.28%);
+  background-image: -ms-linear-gradient(89.64deg, #0770BA55 0.32%, #0770BA 32.07%, #0770BA99 60.55%, #0770BA 99.28%);
+  background-image: -o-linear-gradient(89.64deg, #0770BA55 0.32%, #0770BA 32.07%, #0770BA99 60.55%, #0770BA 99.28%);
+  background-image: linear-gradient(89.64deg, #0770BA55 0.32%, #0770BA 32.07%, #0770BA99 60.55%, #0770BA 99.28%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -10757,7 +10783,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 60px;
   font-weight: 700;
   font-family: var(--tp-ff-space);
-  color: var(--tp-common-black-solid);
+  color: var(--sisco-blue-primary);
   letter-spacing: -0.04em;
   line-height: 1;
 }
@@ -38775,7 +38801,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .testimonial__item-3 {
   padding: 60px 60px 50px;
-  background: #22264C;
 }
 
 @media (max-width: 575px) {
