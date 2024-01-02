@@ -48207,18 +48207,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /*  31. BIOGRAPHY CSS START
 /*----------------------------------------*/
 
-@media (min-width:767px){
-  .biography__height {
-
-  }
-}
-
-@media (max-width:767px){
-  .biography__height {
-
-  }
-}
-
 
 .biography__bg {
   position: absolute;
@@ -63838,8 +63826,4 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .services__content-9 span{
   color:var(--sisco-blue-primary)
-}
-
-.biography__item-1{
-  margin-bottom:-100px;
 }
