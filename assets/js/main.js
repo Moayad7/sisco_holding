@@ -446,6 +446,19 @@
 		});
 	}
 
+	// for header
+	if ($("#tp-header-lang-toggle-2").length > 0) {
+		window.addEventListener('click', function(e){
+	
+			if (document.getElementById('tp-header-lang-toggle-2').contains(e.target)){
+				$(".tp-lang-list").toggleClass("tp-lang-list-open");
+			}
+			else{
+				$(".tp-lang-list").removeClass("tp-lang-list-open");
+			}
+		});
+	}
+
 	// for footer
 	if ($("#tp-footer-lang-toggle").length > 0) {
 		window.addEventListener('click', function(e){
