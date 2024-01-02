@@ -39767,6 +39767,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   opacity: 0;
 }
 
+.brand__tooltip img {
+  width:100%;
+}
+
 .brand__tooltip::after {
   position: absolute;
   content: "";
