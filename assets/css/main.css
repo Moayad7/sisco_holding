@@ -63829,6 +63829,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 /* new sisco */
 
+.blue-text{
+  color:var(--sisco-blue-secondary);
+}
+
 
 .slider__nav-thumb{
   /* overflow: hidden; */
@@ -63927,3 +63931,4 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .icon-width-60{
   width:100px;
 }
+
