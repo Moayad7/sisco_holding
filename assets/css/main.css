@@ -27159,13 +27159,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .services__icon span {
   color: var(--tp-common-white-op-7);
-  background-color: #fff6;
-  border-radius: 100%;
-  padding:20px;
 }
-.services__item:hover .services__icon span {
-  background-color: #fff;
-}
+
 .services__item:hover .services__icon span {
   color: #fff;
 }
