@@ -13880,6 +13880,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
   position: relative;
   padding-right: 15px;
 }
+.header__lang-selected-lang2 {
+  color: var(--sisco-blue-primary);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  position: relative;
+  padding-right: 15px;
+}
 
 [dir=rtl] .header__lang-selected-lang {
   padding-left: 15px;
@@ -13909,6 +13917,20 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 14px;
   font-family: var(--tp-ff-fontawesome);
 }
+.header__lang-selected-lang2::after {
+  position: absolute;
+  content: "\f107";
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: var(--sisco-blue-primary);
+  font-size: 14px;
+  font-family: var(--tp-ff-fontawesome);
+}
 
 [dir=rtl] .header__lang-selected-lang::after {
   right: auto;
@@ -13920,7 +13942,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   top: 120%;
   right: 0;
   background-color: var(--tp-common-white);
-  z-index: 11;
+  z-index: 100;
   padding: 15px 15px;
   min-width: 100px;
   visibility: hidden;
