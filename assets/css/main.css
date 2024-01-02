@@ -63804,14 +63804,16 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .team__height{
   overflow:hidden;
   height:300px;
+  display:flex;
+  justify-content:center;
+  align-items:start;
 }
 
 .team__height img{
-  
   width:150%;
 }
 
-@media (max-width:1200px){
+@media (max-width:576px){
   .team__height{
     height:300px;
   }
