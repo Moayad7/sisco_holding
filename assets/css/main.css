@@ -3669,7 +3669,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tp-btn-border-8 {
   display: inline-block;
-  padding: 14px 33px 16px 33px;
+  padding: 14px 23px 16px 23px;
   border: 2px solid rgba(255, 255, 255, 0.1019607843);
   font-family: var(--tp-ff-space);
   font-weight: 500;
