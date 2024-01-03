@@ -46097,6 +46097,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   padding: 60px 50px;
   box-shadow: 0px 20px 40px rgba(3, 4, 28, 0.08);
 }
+.contact__location-box-2 {
+  height:100%;
+  padding: 20px 20px;
+  box-shadow: 0px 20px 40px rgba(3, 4, 28, 0.08);
+}
 
 .contact__location-box:hover .contact__location-box-icon img {
   animation-name: tpshake;
@@ -64002,13 +64007,25 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .right-arrow{
   font-size:24px;
   right:-5%;
-  top:50%;
+  top:48%;
   z-index:10;
 }
 .down-arrow{
   font-size:24px;
   bottom:-10%;
-  left:50%;
+  left:48%;
+  z-index:10;
+}
+.down-arrow-2{
+  font-size:24px;
+  bottom:-30%;
+  left:48%;
+  z-index:10;
+}
+.arrows-v{
+  font-size:24px;
+  bottom:-15%;
+  left:48%;
   z-index:10;
 }
 
