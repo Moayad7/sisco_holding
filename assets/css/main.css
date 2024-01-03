@@ -12099,13 +12099,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .logo-border {
   position: relative;
-  padding: 8px 0;
+  padding: 8px 8px;
 }
 
 .logo-border::after {
   position: absolute;
   content: "";
-  right: 23%;
+  right: -2%;
   top: 0;
   width: 1px;
   height: 102%;
@@ -12114,7 +12114,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 [dir=rtl] .logo-border::after {
   right: auto;
-  left: 23%;
+  left: -2%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -14078,15 +14078,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   position: relative;
 }
 
-.header__social-10 ul li::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.16);
-}
+
 
 [dir=rtl] .header__social-10 ul li::after {
   left: 0;
@@ -39750,7 +39742,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .brand__item-3 {
   position: relative;
-  padding: 60px 30px;
+  padding: 40px 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin: -1px 0 0 -1px;
   height: 150px;
@@ -39864,7 +39856,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .brand__tooltip-img {
-  width:100%;
+  height:100%;
+  object-fit:contain;
 }
 
 .brand__tooltip::after {
