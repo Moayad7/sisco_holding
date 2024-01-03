@@ -6769,6 +6769,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .blue-bg {
   background-color: var(--sisco-blue-primary);
 }
+.blue-bg-light {
+  background-color: var(--sisco-blue-secondary);
+}
 .blue-bg-dark {
   background-color: var(--sisco-blue-dark);
 }
@@ -18412,7 +18415,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 .slider__title-9 {
   font-family: var(--tp-ff-syne);
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 1;
   letter-spacing: -0.04em;
   color: var(--tp-common-black);
@@ -19052,7 +19055,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 40px;
-  padding-right: 140px;
 }
 
 [dir=rtl] .slider__content-9>p {
@@ -30532,7 +30534,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   left: 20px;
   right: 20px;
   top: 72%;
-  background-color: rgba(171, 108, 86, 0.8);
+  background-color: var(--sisco-blue-secondary);
   backdrop-filter: blur(10px);
   z-index: 1;
   padding: 15px 25px;
@@ -38150,6 +38152,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .testimonial__content-4 p {
   font-size: 20px;
+  line-height: 1.5;
+  color: var(--tp-common-white);
+  margin-bottom: 22px;
+}
+
+.testimonial__content-4 .maneger {
+  font-size: 18px;
   line-height: 1.5;
   color: var(--tp-common-white);
   margin-bottom: 22px;
@@ -63845,10 +63854,25 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 /* new sisco */
 
+/* google icons */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
 .blue-text{
   color:var(--sisco-blue-secondary);
 }
-
+.white-text{
+  color:#fff;
+}
 
 .slider__nav-thumb{
   /* overflow: hidden; */
@@ -63948,3 +63972,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width:100px;
 }
 
+.right-arrow{
+  font-size:24px;
+  right:-10%;
+  top:50%;
+  z-index:10;
+}
+.down-arrow{
+  font-size:24px;
+  bottom:-10%;
+  left:50%;
+  z-index:10;
+}
