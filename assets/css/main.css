@@ -14419,6 +14419,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   color: #7D7D82;
 }
 
+a.mega-menu-title {
+  color: #ccc;
+}
+
 .header__white.header__white-slider .main-menu ul li .mega-menu li:hover>a {
   color: var(--sisco-blue-secondary);
 }
@@ -14890,14 +14894,13 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .main-menu ul li.has-mega-menu {
   position: static;
-  object-position: center;
 }
 
 .main-menu ul li .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
+  min-width: 400px;
   background: var(--tp-common-white);
   z-index: 99;
   visibility: hidden;
@@ -14923,7 +14926,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .main-menu ul li .submenu li {
-  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -14956,7 +14958,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   z-index: 11;
   color: var(--tp-common-black);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 0 25px;
+  padding-bottom: 1px;
+  width: 100%;
+}
+.main-menu ul li .submenu li a.mega-menu-title {
+  position: relative;
+  z-index: 11;
+  color: var(--sisco-blue-secondary);
+  font-weight: 400;
+  font-size: 12px;
   padding: 0 25px;
   padding-bottom: 1px;
   width: 100%;
@@ -15065,6 +15077,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #7D7D82;
+  cursor: text;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mega-menu-title {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ccc;
   cursor: text;
   padding: 0;
   display: inline-block;
@@ -63868,6 +63892,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 .white-text{
   color:#fff;
+}
+
+.gray-text{
+  color:#ccc;
 }
 
 .slider__nav-thumb{
