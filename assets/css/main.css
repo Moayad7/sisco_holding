@@ -39765,6 +39765,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .brand__item-3 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  object-fit:contain;
+  object-position: center;
   position: relative;
   padding: 40px 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
