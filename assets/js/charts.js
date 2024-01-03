@@ -68,7 +68,6 @@ var options = {
   var options = {
 	series: [9, 10, 6, 10, 10, 3, 2],
 	chart: {
-	width: 380,
 	type: 'polarArea'
   },
   labels: ['RSGT/RSPD 59%', 'Logipoint 10%', 'SA Talke 6%', 'Tawzea 10%', 'Kindasa 10%', 'Isnad 3%', 'Elite 2%'],
