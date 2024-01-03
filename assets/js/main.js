@@ -451,10 +451,10 @@
 		window.addEventListener('click', function(e){
 	
 			if (document.getElementById('tp-header-lang-toggle-2').contains(e.target)){
-				$(".tp-lang-list").toggleClass("tp-lang-list-open");
+				$(".tp-lang-list2").toggleClass("tp-lang-list-open");
 			}
 			else{
-				$(".tp-lang-list").removeClass("tp-lang-list-open");
+				$(".tp-lang-list2").removeClass("tp-lang-list-open");
 			}
 		});
 	}

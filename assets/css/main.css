@@ -13812,7 +13812,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .header__lang {
-  padding: 4px 28px;
+  padding: 4px 8px;
   padding-right: 0;
   position: relative;
   z-index: 99;
@@ -13893,6 +13893,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding-left: 15px;
   padding-right: 0;
 }
+[dir=rtl] .header__lang-selected-lang2 {
+  padding-left: 15px;
+  padding-right: 0;
+}
 
 .header__lang-selected-lang:hover {
   cursor: pointer;
@@ -13900,6 +13904,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .header__lang-selected-lang:hover::after {
+  color: var(--sisco-blue-secondary);
+}
+.header__lang-selected-lang2:hover {
+  cursor: pointer;
+  color: var(--sisco-blue-secondary);
+}
+
+.header__lang-selected-lang2:hover::after {
   color: var(--sisco-blue-secondary);
 }
 
@@ -13936,11 +13948,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
   right: auto;
   left: -15px;
 }
+[dir=rtl] .header__lang-selected-lang2::after {
+  right: auto;
+  left: -15px;
+}
 
 .header__lang-list {
   position: absolute;
-  top: 120%;
-  right: 0;
+  top: 100%;
+  left: 0;
   background-color: var(--tp-common-white);
   z-index: 100;
   padding: 15px 15px;
@@ -13955,8 +13971,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 [dir=rtl] .header__lang-list {
-  right: auto;
-  left: 0;
+  left: auto;
+  right: 0;
 }
 
 .header__lang-list.tp-lang-list-open {
