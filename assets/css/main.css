@@ -64012,19 +64012,19 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 .down-arrow{
   font-size:24px;
-  bottom:-10%;
+  bottom:-20%;
   left:48%;
   z-index:10;
 }
 .down-arrow-2{
   font-size:24px;
-  bottom:-30%;
+  bottom:-40%;
   left:48%;
   z-index:10;
 }
 .arrows-v{
   font-size:24px;
-  bottom:-15%;
+  bottom:-18%;
   left:48%;
   z-index:10;
 }
