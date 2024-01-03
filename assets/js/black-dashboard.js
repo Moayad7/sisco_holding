@@ -309,16 +309,16 @@ gradientChartOptionsConfiguration =  {
   
   var gradientStroke = ctx.createLinearGradient(0,230,0,50);
 
-  var ctx2 = document.getElementById("lineChartExample-2").getContext("2d");
+  // var ctx2 = document.getElementById("lineChartExample-2").getContext("2d");
   
-  var gradientStroke2 = ctx2.createLinearGradient(0,230,0,50);
+  // var gradientStroke2 = ctx2.createLinearGradient(0,230,0,50);
   
   gradientStroke.addColorStop(1, 'rgba(72,72,176,0.2)');
   gradientStroke.addColorStop(0.2, 'rgba(72,72,176,0.0)');
   gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
-  gradientStroke2.addColorStop(1, 'rgba(72,72,176,0.2)');
-  gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-  gradientStroke2.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+  // gradientStroke2.addColorStop(1, 'rgba(72,72,176,0.2)');
+  // gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+  // gradientStroke2.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
   
   var data = {
 	labels: ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
@@ -348,29 +348,31 @@ gradientChartOptionsConfiguration =  {
   });
 
 
-  var data2 = {
-	labels: ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
-	datasets: [{
-	  label: "Data",
-	  fill: true,
-	  backgroundColor: gradientStroke2,
-	  borderColor: '#0F274A',
-	  borderWidth: 2,
-	  borderDash: [],
-	  borderDashOffset: 0.0,
-	  pointBackgroundColor: '#0F274A',
-	  pointBorderColor:'rgba(255,255,255,0)',
-	  pointHoverBackgroundColor: '#0F274A',
-	  pointBorderWidth: 20,
-	  pointHoverRadius: 4,
-	  pointHoverBorderWidth: 15,
-	  pointRadius: 4,
-	  data: [ 60,410,70,100, 75, 50, 80, 100, 70, 80, 120, 500],
-	}]
-  };
+  // var data2 = {
+	// labels: ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
+	// datasets: [{
+	//   label: "Data",
+	//   fill: true,
+	//   backgroundColor: gradientStroke2,
+	//   borderColor: '#0F274A',
+	//   borderWidth: 2,
+	//   borderDash: [],
+	//   borderDashOffset: 0.0,
+	//   pointBackgroundColor: '#0F274A',
+	//   pointBorderColor:'rgba(255,255,255,0)',
+	//   pointHoverBackgroundColor: '#0F274A',
+	//   pointBorderWidth: 20,
+	//   pointHoverRadius: 4,
+	//   pointHoverBorderWidth: 15,
+	//   pointRadius: 4,
+	//   data: [ 60,410,70,100, 75, 50, 80, 100, 70, 80, 120, 500],
+	// }]
+  // };
   
-  var myChart = new Chart(ctx2, {
-	type: 'line',
-	data: data2,
-	options: gradientChartOptionsConfiguration
-  });
+  // var myChart = new Chart(ctx2, {
+	// type: 'line',
+	// data: data2,
+	// options: gradientChartOptionsConfiguration
+  // });
+
+

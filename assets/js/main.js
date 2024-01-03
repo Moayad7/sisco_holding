@@ -2735,3 +2735,14 @@
 
 
 
+var options = {
+	chart: {
+	  type: 'donut'
+	},
+	series: [44, 55, 13, 33],
+    labels: ['sisco', 'sisco', 'sisco', 'sisco']
+  }
+  
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  
+  chart.render();
