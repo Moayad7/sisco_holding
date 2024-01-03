@@ -2735,17 +2735,3 @@
 
 
 
-var options = {
-	chart: {
-	  type: 'donut'
-	},
-	series: [44, 55, 13, 33],
-    labels: ['sisco', 'sisco', 'sisco', 'sisco'],
-	fill: {
-		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824' ]
-	  }
-  }
-  
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
-  
-  chart.render();
