@@ -48395,7 +48395,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   line-height: 1.44;
   letter-spacing: -0.04em;
   color: #fff;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   padding-right: 140px;
   animation-delay: 0.6s;
   animation-duration: 1s;
