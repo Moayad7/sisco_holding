@@ -247,6 +247,7 @@ select,
 textarea,
 li,
 img,
+i,
 .transition-3,
 .body-overlay,
 .nice-select::after,
@@ -24167,6 +24168,20 @@ only screen and (min-width: 576px) and (max-width: 767px),
   box-shadow: 0px 20px 30px rgba(50, 15, 3, 0.2);
   backdrop-filter: blur(20px);
 }
+.about__experience-4-2 {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: 1;
+  padding: 22px 45px 12px 38px;
+  background-color: var(--sisco-blue-secondary);
+  background-color: #fff;
+  box-shadow: 0px 20px 30px rgba(50, 15, 3, 0.2);
+  backdrop-filter: blur(20px);
+}
+.about__experience-4-width {
+  width:300px;
+}
 
 [dir=rtl] .about__experience-4 {
   left: auto;
@@ -24181,6 +24196,28 @@ only screen and (min-width: 576px) and (max-width: 767px),
   [dir=rtl] .about__experience-4 {
     left: auto;
     right: -15px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about__experience-4-2 {
+    left: -15px;
+  }
+
+  [dir=rtl] .about__experience-4-2 {
+    left: auto;
+    right: -15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about__experience-4-width {
+    width:100%;
+  }
+  .about__experience-4-2 {
+    position: relative;
+  }
+
+  [dir=rtl] .about__experience-4-2 {
+    position: relative;
   }
 }
 
@@ -46142,6 +46179,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   margin-bottom: 0;
 }
 
+.contact__location-box-info.white-text p{
+  color: #fff;
+}
+
 .contact__location-box-info p a:hover {
   color: var(--sisco-blue-secondary);
 }
@@ -64031,4 +64072,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 video{
   object-fit: cover;
+}
+
+.team__content-8 a:hover .team__content-8>a>i{
+  background-color: var(--sisco-blue-secondary);
+
 }
