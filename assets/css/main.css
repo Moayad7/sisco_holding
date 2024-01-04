@@ -6736,7 +6736,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .white-bg-light {
-  background-color: #fff6;
+  background-color: #fff9;
+}
+.blue-bg-light-transparent {
+  background-color: #0770BA22;
 }
 
 .black-bg {
