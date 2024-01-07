@@ -64187,6 +64187,11 @@ video{
   text-decoration: none;
 }
 
+.breadcrumbs li {
+  color: #fff;
+  text-decoration: none;
+}
+
 .breadcrumbs li a:hover {
   color: #007799;
 }
