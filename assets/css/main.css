@@ -64173,6 +64173,35 @@ video{
 }
 
 
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumbs li a:hover {
+  color: #007799;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  margin: 0 8px;
+  color: #ccc;
+}
+
+.breadcrumbs li:first-child::before {
+  display: none;
+}
+
+
 /* Source: www.cssscript.com/responsive-hierarchical-organization-chart-pure-css/ */
 /* Author: erinesullivan */
 /* Licence: MIT */
