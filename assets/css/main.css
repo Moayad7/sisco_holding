@@ -46506,7 +46506,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .features__wrapper-15 {
   position: relative;
   z-index: 1;
-  box-shadow: 0px 20px 40px rgba(3, 4, 28, 0.08);
 }
 
 .features__wrapper-15.is-translate-50 {
