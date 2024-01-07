@@ -30818,9 +30818,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .team__details-border {
-  padding: 70px 100px;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEF;
+  padding: 40px 50px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -30943,7 +30941,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .team__details-about-border {
-  border-bottom: 1px solid #EAEAEF;
+  /* border-bottom: 1px solid #EAEAEF; */
 }
 
 .team__details-about-title {
@@ -30955,7 +30953,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .team__details-about-content p {
   font-size: 16px;
   line-height: 1.62;
-  color: var(--tp-text-1);
+  /* color: var(--tp-text-1); */
   opacity: 0.9;
   margin-bottom: 25px;
 }
@@ -30971,7 +30969,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .team__details-about-list ol li {
   font-size: 16px;
-  color: var(--tp-text-1);
+  /* color: var(--tp-text-1); */
   opacity: 0.9;
 }
 
