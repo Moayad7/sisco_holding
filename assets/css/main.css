@@ -26381,6 +26381,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   padding: 52px 0 8px;
   position: relative;
   overflow: hidden;
+  
 }
 
 .counter__inner-10 {
@@ -26573,6 +26574,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 575px) {
+  .counter__item-4-wrapper {
+    padding: 0 40px;
+  }
   .counter__item-4 {
     margin-bottom: 25px;
     padding-bottom: 25px;
