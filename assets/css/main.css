@@ -42826,7 +42826,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 .pricing__item {
   padding: 10px 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #0f274a66;
   backdrop-filter: blur(10px);
 }
 
