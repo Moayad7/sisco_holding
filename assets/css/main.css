@@ -27966,7 +27966,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .services__title-9 {
-  font-family: var(--tp-ff-syne);
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -64067,6 +64066,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .h-blog img{
   object-position: center;
 
+}
+
+.services__content-9 span{
+  color:var(--sisco-blue-primary)
 }
 
 .services__content-9 span{
