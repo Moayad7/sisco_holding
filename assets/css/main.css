@@ -10562,7 +10562,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .section__title-pre-2 {
-  font-size: 110px;
+  font-size: 90px;
   font-weight: 600;
   color: var(--tp-text-5);
   position: absolute;
@@ -46323,6 +46323,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   color: #fff;
 }
 
+.contact__location-box-info.gray-text p{
+  color: #ccc;
+}
+
 .contact__location-box-info p a:hover {
   color: var(--sisco-blue-secondary);
 }
@@ -55689,7 +55693,7 @@ only screen and (min-width: 1600px) and (max-width: 1699px) {
 }
 
 .blog__item-2:hover {
-  box-shadow: 0px 30px 50px rgba(22, 34, 19, 0.1), 0px 6px 0px #008080;
+  box-shadow: 0px 30px 50px rgba(22, 34, 19, 0.1), 0px 6px 0px var(--sisco-blue-primary);
 }
 
 .blog__item-2:hover .blog__thumb-2 img {
@@ -56233,18 +56237,19 @@ only screen and (min-width: 576px) and (max-width: 767px),
   margin-bottom: 12px;
 }
 
-.blog__tag-2 a {
+.blog__tag-2 h4 {
   display: inline-block;
   padding: 0px 11px;
   font-size: 14px;
   font-weight: 600;
   font-family: var(--tp-ff-inter);
-  color: var(--tp-theme-2);
-  background-color: rgba(0, 128, 128, 0.1);
+  color: var(--tp-common-white);
+  background-color: var(--sisco-blue-primary);
+  padding: 10px 20px;
 }
 
-.blog__tag-2 a:hover {
-  background-color: var(--tp-theme-2);
+.blog__tag-2 h4:hover {
+  background-color: var(--sisco-blue-secondary);
   color: var(--tp-common-white);
 }
 
@@ -56765,7 +56770,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: var(--tp-common-white);
+  /* background-color: var(--tp-common-white); */
   padding: 10px 16px;
 }
 
@@ -56780,11 +56785,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   font-family: var(--tp-ff-oswald);
   margin-bottom: 0;
 }
+.blog__meta-2 a {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--tp-ff-oswald);
+  margin-bottom: 0;
+}
 
 .blog__meta-2 h4 span {
   font-size: 13px;
   font-weight: 500;
-  color: var(--tp-text-6);
+  /* color: var(--tp-text-6); */
   display: block;
   font-family: var(--tp-ff-inter);
 }
@@ -64319,6 +64330,11 @@ video{
 
 .breadcrumbs li:first-child::before {
   display: none;
+}
+
+.fs-8{
+  font-size: 12px;
+  font-weight: medium;
 }
 
 
