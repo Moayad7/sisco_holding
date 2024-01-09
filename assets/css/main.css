@@ -64263,6 +64263,20 @@ video{
   overflow: hidden;
 }
 
+.border_radius-15-right{
+  border-radius: 0 15px  15px 0;
+  overflow: hidden;
+}
+
+.border_radius-15-left{
+  border-radius:  15px 0 0 15px;
+  overflow: hidden;
+}
+
+.border-raduis-item{
+  border-radius:15px;
+  overflow:hidden;
+}
 
 .breadcrumbs {
   list-style: none;
@@ -64306,6 +64320,7 @@ video{
 .breadcrumbs li:first-child::before {
   display: none;
 }
+
 
 
 
