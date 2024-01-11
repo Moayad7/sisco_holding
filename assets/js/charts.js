@@ -103,21 +103,21 @@
 
 //   
 
-// var options = {
-// 	chart: {
-// 	  type: 'donut'
-// 	},
-// 	series: [24, 30, 13, 13, 20, 10, 25],
-//     labels: ['RSGT/RSPD', 'Logipoint', 'SA Talke', 'Tawzea', 'Kindasa', 'Isnad', 'Elite'],
-//     colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
-// 	fill: {
-// 		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
-// 	  }
-//   }
+var options = {
+	chart: {
+	  type: 'donut'
+	},
+	series: [24, 30, 13, 13, 20, 10, 25],
+    labels: ['RSGT/RSPD', 'Logipoint', 'SA Talke', 'Tawzea', 'Kindasa', 'Isnad', 'Elite'],
+    colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
+	fill: {
+		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
+	  }
+  }
   
-//   var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+  var chart = new ApexCharts(document.querySelector("#chart-3"), options);
   
-//   chart.render();
+  chart.render();
 
   
 //   var options = {
