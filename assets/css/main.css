@@ -11711,7 +11711,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tp-section-wrapper-2 p {
   font-size: 16px;
   line-height: 1.62;
-  color:#ccc;
+  color:#333;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
