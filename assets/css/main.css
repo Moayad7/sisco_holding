@@ -43348,8 +43348,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   margin-bottom: 0;
 }
 
-.pricing__feature-info-text p {
-  font-size: 16px;
+.pricing__feature-info-text p,
+.pricing__feature-info-text li {
+  font-size: 14px;
   color: var(--tp-common-black-11);
   margin-bottom: 0;
 }
@@ -43361,17 +43362,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   border-bottom-right-radius: 41px;
 }
 
-/* .pricing__header {
-  min-height: 240px;
-  border-top-left-radius: 41px;
-  border-top-right-radius: 41px;
-  border-left: 1px solid rgba(4, 18, 31, 0.08);
-  border-right: 1px solid rgba(4, 18, 31, 0.08);
-} */
 
 .pricing__header-title {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: -0.01em;
   color: var(--tp-common-black-11);
   margin-bottom: 20px;
@@ -43379,7 +43373,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .pricing__header-content {
   position: relative;
-  padding: 52px 35px;
   border-top: 1px solid rgba(4, 18, 31, 0.08);
   border-right: 1px solid rgba(4, 18, 31, 0.08);
   height: 100%;
@@ -43947,14 +43940,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   border-radius: 41px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-only screen and (min-width: 768px) and (max-width: 991px),
-only screen and (min-width: 576px) and (max-width: 767px),
-(max-width: 575px) {
-  .pricing__table-wrapper {
-    width: 1120px;
-  }
-}
 
 .pricing__footer-content {
   height: 100%;
