@@ -176,7 +176,7 @@
 	// rtl settings
 	function tp_rtl_settings() {
 
-		$('#tp-dir-toggler').on("change", function () {
+		$('#tp-dir-toggler').on("click", function () {
 			toggle_rtl();
 			window.location.reload(true);
 
@@ -186,9 +186,9 @@
 		// set toggle theme scheme
 		function tp_set_scheme(tp_dir) {
 			localStorage.setItem('tp_dir', tp_dir);
-			document.documentElement.setAttribute("dir", tp_dir);
-
-			if (tp_dir === 'rtl') {
+			// document.documentElement.setAttribute("dir", tp_dir);
+			document.querySelector('html').dir==="rtl"
+			if (document.querySelector('html').dir==="rtl") {
 				var list = $("[href='assets/css/bootstrap.css']");
 				$(list).attr("href", "assets/css/bootstrap-rtl.css");
 			} else {
@@ -199,7 +199,7 @@
 
 		// toogle theme scheme
 		function toggle_rtl() {
-			if (localStorage.getItem('tp_dir') === 'rtl') {
+			if (document.querySelector('html').dir==="rtl") {
 				tp_set_scheme('ltr');
 				var list = $("[href='assets/css/bootstrap-rtl.css']");
 				$(list).attr("href", "assets/css/bootstrap.css");
@@ -212,7 +212,7 @@
 
 		// set the first theme scheme
 		function tp_init_dir() {
-			if (localStorage.getItem('tp_dir') === 'rtl') {
+			if (document.querySelector('html').dir==="rtl") {
 				tp_set_scheme('rtl');
 				var list = $("[href='assets/css/bootstrap.css']");
 				$(list).attr("href", "assets/css/bootstrap-rtl.css");
