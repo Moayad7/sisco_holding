@@ -304,7 +304,7 @@
       },
       series: [{
         minPointSize: 10,
-        innerSize: '20%',
+        innerSize: '80%',
         zMin: 0,
         name: 'countries',
         borderRadius: 5,
