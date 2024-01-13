@@ -46,9 +46,9 @@ Highcharts.chart('container', {
     }],
     colors: [
       '#4caefe',
-      '#3dc3e8',
-      '#2dd9db',
       '#0f274a44',
+      '#2B2824',
+      '#4caefe',
       '#0770BA',
       '#0f274a44',
       '#0f274a'
