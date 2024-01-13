@@ -103,21 +103,21 @@
 
 //   
 
-var options = {
-	chart: {
-	  type: 'donut'
-	},
-	series: [24, 30, 13, 13, 20, 10, 25],
-    labels: ['RSGT/RSPD', 'Logipoint', 'SA Talke', 'Tawzea', 'Kindasa', 'Isnad', 'Elite'],
-    colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
-	fill: {
-		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
-	  }
-  }
+// var options = {
+// 	chart: {
+// 	  type: 'donut'
+// 	},
+// 	series: [24, 30, 13, 13, 20, 10, 25],
+//     labels: ['RSGT/RSPD', 'Logipoint', 'SA Talke', 'Tawzea', 'Kindasa', 'Isnad', 'Elite'],
+//     colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
+// 	fill: {
+// 		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
+// 	  }
+//   }
   
-  var chart = new ApexCharts(document.querySelector("#chart-3"), options);
+//   var chart = new ApexCharts(document.querySelector("#chart-3"), options);
   
-  chart.render();
+//   chart.render();
 
   
 //   var options = {
@@ -150,42 +150,42 @@ var options = {
 //   var chart = new ApexCharts(document.querySelector("#chart-2"), options);
 //   chart.render();
 
-  var options = {
-	series: [9, 10, 6, 10, 10, 3, 2],
-	chart: {
-	type: 'polarArea'
-  },
-  labels: ['RSGT/RSPD 59%', 'Logipoint 10%', 'SA Talke 6%', 'Tawzea 10%', 'Kindasa 10%', 'Isnad 3%', 'Elite 2%'],
-  colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
-	fill: {
-		colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
-	  },
-  fill: {
-	opacity: 1
-  },
-    stroke: {
-	colors: ['#fff']
-  },
-  yaxis: {
-	show: false
-  },
-  legend: {
-	position: 'bottom'
-  },
-  plotOptions: {
-	polarArea: {
-	  rings: {
-		strokeWidth: 0
-	  },
-	  spokes: {
-		strokeWidth: 0
-	  },
-	}
-  }
-  };
+  // var options = {
+	// series: [9, 10, 6, 10, 10, 3, 2],
+	// chart: {
+	// type: 'polarArea'
+  // },
+  // labels: ['RSGT/RSPD 59%', 'Logipoint 10%', 'SA Talke 6%', 'Tawzea 10%', 'Kindasa 10%', 'Isnad 3%', 'Elite 2%'],
+  // colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ],
+	// fill: {
+	// 	colors: ['#2B2824', '#0770BA', '#0f274a','#2B2824', '#0770BA', '#0f274a' ]
+	//   },
+  // fill: {
+	// opacity: 1
+  // },
+  //   stroke: {
+	// colors: ['#fff']
+  // },
+  // yaxis: {
+	// show: false
+  // },
+  // legend: {
+	// position: 'bottom'
+  // },
+  // plotOptions: {
+	// polarArea: {
+	//   rings: {
+	// 	strokeWidth: 0
+	//   },
+	//   spokes: {
+	// 	strokeWidth: 0
+	//   },
+	// }
+  // }
+  // };
 
-  var chart = new ApexCharts(document.querySelector("#chart-2"), options);
-  chart.render();
+  // var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+  // chart.render();
 
 
   var ctx2 = document.getElementById("chart-line").getContext("2d");
@@ -291,10 +291,56 @@ var options = {
     });
 
 
+    Highcharts.chart('container', {
+      chart: {
+        type: 'variablepie'
+      },
+     
+      tooltip: {
+        headerFormat: '',
+        pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+          'Area (square km): <b>{point.y}</b><br/>' +
+          'Population density (people per square km): <b>{point.z}</b><br/>'
+      },
+      series: [{
+        minPointSize: 10,
+        innerSize: '20%',
+        zMin: 0,
+        name: 'countries',
+        borderRadius: 5,
+        data: [{
+          name: 'Spain',
+          y: 100,
+          z: 100
+        }, {
+          name: 'France',
+          y: 100,
+          z: 100
+        }, {
+          name: 'Poland',
+          y: 100,
+          z: 100
+        }],
+        colors: [
+          '#4caefe',
+          '#3dc3e8',
+          '#2dd9db',
+          '#0f274a44',
+          '#0770BA',
+          '#0f274a44',
+          '#0f274a'
+        ]
+      }]
+    });
+
+
 
     // flowchart
 
-    const checkbox = document.querySelector('#rtl');
-    checkbox.addEventListener("change", (e)=>{
-      document.body.classList.toggle('rtl')
-    })
+    // const checkbox = document.querySelector('#rtl');
+    // checkbox.addEventListener("change", (e)=>{
+    //   document.body.classList.toggle('rtl')
+    // })
+
+
+
