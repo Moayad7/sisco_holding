@@ -304,13 +304,13 @@
       },
       series: [{
         minPointSize: 10,
-        innerSize: '80%',
+        innerSize: '70%',
         zMin: 0,
         name: 'countries',
         borderRadius: 5,
         data: [{
           name: 'Spain',
-          y: 100,
+          y: 150,
           z: 100
         }, {
           name: 'France',
@@ -318,14 +318,14 @@
           z: 100
         }, {
           name: 'Poland',
-          y: 100,
+          y: 30,
           z: 100
         }],
         colors: [
           '#4caefe',
-          '#3dc3e8',
-          '#2dd9db',
           '#0f274a44',
+          '#2B2824',
+          '#4caefe',
           '#0770BA',
           '#0f274a44',
           '#0f274a'
