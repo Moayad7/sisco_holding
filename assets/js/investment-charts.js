@@ -16,32 +16,32 @@ Highcharts.chart('container', {
     name: 'countries',
     borderRadius: 5,
     data: [{
-      name: 'Spain',
-      y: 160,
+      name: 'REGT/RSPD',
+      y: 59,
       z: 100
     }, {
-      name: 'France',
-      y: 100,
-      z:  100
-    }, {
-      name: 'Poland',
+      name: 'Logipoint',
       y: 10,
       z:  100
     }, {
-      name: 'Czech Republic',
-      y:120,
+      name: 'S.A. Talke',
+      y: 10,
       z:  100
     }, {
-      name: 'Italy',
-      y: 100,
+      name: 'Isnad',
+      y:2,
       z:  100
     }, {
-      name: 'Switzerland',
-      y:20,
+      name: 'Elite',
+      y: 3,
       z:  100
     }, {
-      name: 'Germany',
-      y: 50,
+      name: 'Tawzea',
+      y:10,
+      z:  100
+    }, {
+      name: 'Kindasa',
+      y: 6,
       z:  100
     }],
     colors: [
