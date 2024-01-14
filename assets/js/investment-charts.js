@@ -46,12 +46,12 @@ Highcharts.chart('container', {
     }],
     colors: [
       '#4caefe',
-      '#0f274a44',
+      '#0f274a',
       '#2B2824',
       '#4caefe',
       '#0770BA',
-      '#0f274a44',
-      '#0f274a'
+      '#0f274a',
+      '#2B2824'
     ]
   }]
 });
