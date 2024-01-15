@@ -87,9 +87,20 @@ ol.organizational-chart li > div {
 }
 
 /*** PRIMARY ***/
+ol.organizational-chart > li > h1 {
+    background-color: #001330 ;
+    margin-left: 1em;
+    
+}
 ol.organizational-chart > li > div {
     background-color: #001330 ;
     margin-left: 1em;
+    border-radius: 15px;
+    padding: 20px;
+}
+ol.organizational-chart > li > div > h1 {
+    font-size: 16px;
+    color: #fff;
 }
 
 ol.organizational-chart > li > div:before {
@@ -130,18 +141,25 @@ ol.organizational-chart > li > ol:after {
 
 ol.organizational-chart > li > ol > li > div {
     background-color: var(--sisco-blue-primary);
+    border-radius: 15px;
+    padding: 20px;
 }
 ol.organizational-chart > li > ol > li > div >h2 {
     color:white;
+    font-size: 16px;
 }
 
 
 /*** TERTIARY ***/
 ol.organizational-chart > li > ol > li > ol > li > div {
     background-color: var(--sisco-blue-secondary);
+    border-radius: 15px;
+    padding: 20px;
+    
 }
 ol.organizational-chart > li > ol > li > ol > li > div> h3 {
     color:white;
+    font-size: 16px;
 }
 
 /*** QUATERNARY ***/
@@ -437,7 +455,7 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 /* TYPOGRAPHY */
 h1,h2,h3 {
   font: Arial,Helvetica;
-  font-size: 16px;
+  font-size: 12px;
 }
 h1 {
   color: #fff;

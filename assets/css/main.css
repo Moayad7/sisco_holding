@@ -14828,6 +14828,10 @@ a.mega-menu-title {
   box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.1);
 }
 
+.main-menu ul li .submenu-width {
+  min-width: 450px;
+}
+
 [dir=rtl] .main-menu ul li .submenu {
   left: auto;
   right: 0;
