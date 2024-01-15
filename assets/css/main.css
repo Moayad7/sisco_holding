@@ -35257,6 +35257,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 .portfolio__details-content p {
   font-size: 16px;
   line-height: 1.62;
+  color:#fff;
 }
 
 .portfolio__details-content-2 p {
@@ -35351,11 +35352,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 18px;
   line-height: 1;
   margin-bottom: 3px;
+  color:#fff;
 }
 
 .portfolio__details-meta-content span {
   font-size: 16px;
   line-height: 1;
+  color:#fff;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
