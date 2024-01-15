@@ -114,7 +114,7 @@ var ctx2 = document.getElementById("chart-line").getContext("2d");
       },
       series: [{
         minPointSize: 10,
-        innerSize: '70%',
+        innerSize: '30%',
         zMin: 0,
         name: 'countries',
         borderRadius: 5,

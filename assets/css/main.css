@@ -63742,3 +63742,9 @@ video{
 }
 
 
+
+.highcharts-button,
+.highcharts-title,
+.highcharts-credits{
+  display:none;
+}
